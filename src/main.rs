@@ -1,5 +1,7 @@
 fn main() {
-    let food: &str = "pasta";
-    let text: String = String::new();
-    let candy: String = String::from("KitKat")
+    let mut name: String = String::from("Reid Herrera");
+    println!("{name}");
+    name.push_str(" is awesome!");
+
+    println!("{name}");
 }
