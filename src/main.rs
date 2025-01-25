@@ -1,7 +1,6 @@
 fn main() {
-    let mut name: String = String::from("Reid Herrera");
-    println!("{name}");
-    name.push_str(" is awesome!");
+    let person: String = String::from("Reid");
 
-    println!("{name}");
+    drop(person);
+    println!("{person}");
 }
