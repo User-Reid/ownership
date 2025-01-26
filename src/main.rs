@@ -1,9 +1,16 @@
-fn bake_cake() -> String {
-    let cake: String = String::from("Chocolate Mousse");
-    return cake;
+fn add_flour(mut meal: String) -> String {
+    meal.push_str("Add flour");
+    meal
+}
+
+fn add_sugar(mut meal: String) -> String {
+    meal.push_str("Add sugar");
+    meal
 }
 
 fn main() {
-    let cake: String = bake_cake();
-    println!("I now have a {cake} cake");
+    let mut current_meal: String = String::new();
+    current_meal = add_flour(current_meal);
+    current_meal = add_sugar(current_meal);
+    add_salt()
 }
