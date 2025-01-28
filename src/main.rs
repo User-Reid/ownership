@@ -1,16 +1,13 @@
-fn add_flour(mut meal: String) -> String {
+fn add_flour(meal: &mut String) {
     meal.push_str("Add flour");
-    meal
 }
 
-fn add_sugar(mut meal: String) -> String {
-    meal.push_str("Add sugar");
-    meal
+fn show_my_meal(meal: &String) {
+    println!("Meal steps: {meal}")
 }
 
 fn main() {
     let mut current_meal: String = String::new();
-    current_meal = add_flour(current_meal);
-    current_meal = add_sugar(current_meal);
-    add_salt()
+    add_flour(&mut current_meal);
+    show_my_meal(&current_meal);
 }
