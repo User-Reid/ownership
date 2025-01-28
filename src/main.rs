@@ -1,13 +1,6 @@
-fn add_flour(meal: &mut String) {
-    meal.push_str("Add flour");
-}
-
-fn show_my_meal(meal: &String) {
-    println!("Meal steps: {meal}")
-}
-
 fn main() {
-    let mut current_meal: String = String::new();
-    add_flour(&mut current_meal);
-    show_my_meal(&current_meal);
+    let mut car: String = String::from("Red");
+    let ref1: &mut String = &mut car;
+    let ref2: &String = &car;
+    println!("{ref1}, {ref2}")
 }
