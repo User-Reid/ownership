@@ -1,7 +1,6 @@
-fn main() {
-    let mut coffee: String = String::from("Mocha");
-    let a: &mut String = &mut coffee;
-    println!("{a}");
-    let b: &mut String = a;
-    println!("{b}")
+fn create_city() -> String {
+    let city: String = String::from("New York");
+    city
 }
+
+fn main() {}
