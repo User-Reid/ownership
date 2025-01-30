@@ -1,6 +1,10 @@
-fn create_city() -> String {
-    let city: String = String::from("New York");
-    city
-}
+fn main() {
+    let registrations: (bool, bool, bool) = (true, false, true);
+    let first: bool = registrations.0;
+    println!("{first}, {registrations:?}");
 
-fn main() {}
+    let languages: (String, String) = (String::from("Rust"), String::from("Javascript"));
+    let first: &String = &languages.0;
+
+    println!("{first}, {languages:?}")
+}
